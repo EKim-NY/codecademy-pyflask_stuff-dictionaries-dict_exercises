@@ -51,4 +51,23 @@ print(available_items)
 print(health_points) 
 
 
+# Print out the keys using the LIST function or as a dict-keys object. 
+user_ids = {"teraCoder": 100019, "pythonGuy": 182921, "samTheJavaMaam": 123112, "lyleLoop": 102931, "keysmithKeith": 129384}
 
+num_exercises = {"functions": 10, "syntax": 13, "control flow": 15, "loops": 22, "lists": 19, "classes": 18, "dictionaries": 18}
+
+print("Print out the keys using list(). ") 
+print('\n')
+
+print(list(user_ids)) 
+
+users = user_ids.keys() 
+for user in users: 
+  print(user) 
+
+lessons = num_exercises.keys() 
+
+print('\n')
+print(users) 
+print('\n')
+print(lessons) 
