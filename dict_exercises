@@ -71,3 +71,14 @@ print('\n')
 print(users) 
 print('\n')
 print(lessons) 
+
+
+# Get all dictionary values. 
+num_exercises = {"functions": 10, "syntax": 13, "control flow": 15, "loops": 22, "lists": 19, "classes": 18, "dictionaries": 18}
+
+total_exercises = 0 
+values_list = list(num_exercises.values())
+for value in values_list: 
+  total_exercises += value 
+
+print(total_exercises) 
