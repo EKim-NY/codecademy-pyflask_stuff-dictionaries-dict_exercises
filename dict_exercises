@@ -11,3 +11,18 @@ if "blueberry" not in zodiac_elements:
 
 if "fire" in zodiac_elements: 
   print(zodiac_elements["fire"])
+
+# Use a Try/Except to get a key. 
+caffeine_level = {"espresso": 64, "chai": 40, "decaf": 0, "drip": 120}
+
+try:
+  print(caffeine_level["matcha"]) 
+except KeyError: 
+  print("Unknown Caffeine Level") 
+
+caffeine_level["matcha"] = 30
+
+try: 
+  print(caffeine_level["matcha"])
+except KeyError: 
+  print("Caffeine level should exist")
