@@ -82,3 +82,27 @@ for value in values_list:
   total_exercises += value 
 
 print(total_exercises) 
+
+# Get all dictionary keys and values using dict-keys and dict-values objects. Compare the results against the list function. 
+num_exercises = {"functions": 10, "syntax": 13, "control flow": 15, "loops": 22, "lists": 19, "classes": 18, "dictionaries": 18}
+
+total_exercises = 0 
+values_list = list(num_exercises.values())
+for value in values_list: 
+  total_exercises += value 
+
+print("Original: ", list(num_exercises), '\n') 
+print("Total exercises: ", total_exercises, '\n') 
+print("List: ", values_list, '\n')
+print("All keys: ", '\n', num_exercises.keys(), '\n')
+print("All values: ", '\n', num_exercises.values(), '\n')
+
+num_exercises["test"] = 10
+values_list = list(num_exercises.values())
+print("Edited dictionary: ", num_exercises, '\n')
+print("List of edited values after re-assignment: ", values_list, '\n')
+print("Dict-values and dict-keys objects update the change automatically unlike with the list function.", '\n')
+print("All keys: ", '\n', num_exercises.keys(), '\n')
+print("All values: ", '\n', num_exercises.values())
+
+
