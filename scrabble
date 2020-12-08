@@ -66,3 +66,8 @@ def update_point_totals(player, word_played):
     player_to_points[player] = player_points 
 
   return (player_to_points) 
+
+  # Check that each player's total points is updated correctly after a word is played. 
+print(update_point_totals("Hello Kitty", "BLUE"),'\n')
+
+print(update_point_totals("Hello Kitty", "WATER"), '\n') 
