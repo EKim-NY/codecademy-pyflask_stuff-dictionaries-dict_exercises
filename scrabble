@@ -19,3 +19,11 @@ def score_word(word):
 # Check if score_word function works correctly. 
 brownie_points = score_word("BROWNIE")
 print(brownie_points)
+
+
+# Create a dictionary of each player and words played using a list comprehension. 
+players = ["player1", "wordNerd", "Lexi Con", "Prof Reader"]
+words_played = [["BLUE", "TENNIS", "EXIT"], ["EARTH", "EYES", "MACHINE"], ["ERASER", "BELLY", "HUSKY"], ["ZAP", "COMA", "PERIOD"] ] 
+player_to_words = { player:word for player, word in zip(players, words_played)}
+
+print(player_to_words)
