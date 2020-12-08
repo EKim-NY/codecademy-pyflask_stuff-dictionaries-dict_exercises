@@ -15,3 +15,7 @@ def score_word(word):
     else: 
       point_total += 0 
   return point_total 
+
+# Check if score_word function works correctly. 
+brownie_points = score_word("BROWNIE")
+print(brownie_points)
