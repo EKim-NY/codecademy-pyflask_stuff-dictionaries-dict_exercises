@@ -39,3 +39,17 @@ for player, words in player_to_words.items():
   player_to_points[player] = player_points 
 
 print(player_to_points) 
+
+
+######## Extended practice ########
+
+# Add a word to the list of words played. 
+def play_word(player_name, word_played): 
+  if player_name in player_to_words.keys(): 
+    player_to_words[player_name].append(word_played)
+  else: 
+    ### TIP! ### 
+    # Create an empty list for a new player before appending the word_played to it. 
+    # Applying the list function to a word will create a list of letters instead of a single word. 
+    player_to_words[player_name] = []
+    player_to_words[player_name].append(word_played)
