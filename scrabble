@@ -27,3 +27,15 @@ words_played = [["BLUE", "TENNIS", "EXIT"], ["EARTH", "EYES", "MACHINE"], ["ERAS
 player_to_words = { player:word for player, word in zip(players, words_played)}
 
 print(player_to_words)
+
+# Find each player's score for all words played in their list. 
+player_to_points = {} 
+for player, words in player_to_words.items(): 
+  player_points = 0 
+  # Sum up the score of all played words for each player. 
+  for word in words: 
+    player_points += score_word(word)
+  # Assign the correct total score to each player. 
+  player_to_points[player] = player_points 
+
+print(player_to_points) 
