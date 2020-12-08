@@ -53,3 +53,10 @@ def play_word(player_name, word_played):
     # Applying the list function to a word will create a list of letters instead of a single word. 
     player_to_words[player_name] = []
     player_to_words[player_name].append(word_played)
+
+
+# Check that the play_word function works correctly.  
+play_word("player1", "RED") 
+print(player_to_words) 
+play_word("Hello Kitty", "LOLLIPOP") 
+print(player_to_words)
